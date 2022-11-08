@@ -7,10 +7,10 @@ webpack setting!!
 npm init
 ```
 
-👉  init를 입력하면 package-name을 설정하라고 뜨는데 enter를 누르면 자동으로 폴더 이름이 입력된다. 
-(단, 한글은 인식하지 못하므로 한글일 경우 영어로 package 이름을 설정해줘야 한다.) 
-이후에 계속 뭘 물어보지만 enter, enter, … 
-그리고 마지막에 Is this OK?라고 물어보는데 yes라고 입력해도 되고 그냥 enter를 눌러도 된다.
+👉  init를 입력하면 package-name을 설정하라고 뜨는데 enter를 누르면 자동으로 폴더 이름이 입력된다.     
+(단, 한글은 인식하지 못하므로 한글일 경우 영어로 package 이름을 설정해줘야 한다.)     
+이후에 계속 뭘 물어보지만 enter, enter, …      
+그리고 마지막에 Is this OK?라고 물어보는데 yes라고 입력해도 되고 그냥 enter를 눌러도 된다.     
 
 👉 이 모든 과정이 끝나면 폴더에 package.json 파일이 생성된다.
 
@@ -32,8 +32,8 @@ npm install webpack webpack-cli --save-dev
     
 
 ### 4. webpack.config.js 파일 생성
-👉   webpack이 해당 프로젝트 안에서 어떤 식으로 구상되어 실행될 것인지 정하는 파일
-👉   위치는 프로젝트 폴더 바로 아래**(package.json 파일과 같은 위치)**
+👉   webpack이 해당 프로젝트 안에서 어떤 식으로 구상되어 실행될 것인지 정하는 파일    
+👉   위치는 프로젝트 폴더 바로 아래**(package.json 파일과 같은 위치)**    
 
 ```jsx
 const path = require('path');
@@ -109,8 +109,8 @@ module.exports = {
 };
 ```
 
-👉 src에 위치한 index.html 파일을 dist파일로 옮겨, 서버가 실행되면 index.html이 보이도록 설정하는 과정입니다. 
-👉  만약 index.html이 아닌 다른 html 파일을 띄우길 원하신다면, 해당 파일 이름을 index.html 대신 적어주시면 됩니다.
+👉 src에 위치한 index.html 파일을 dist파일로 옮겨, 서버가 실행되면 index.html이 보이도록 설정하는 과정입니다.     
+👉 만약 index.html이 아닌 다른 html 파일을 띄우길 원하신다면, 해당 파일 이름을 index.html 대신 적어주시면 됩니다.    
 
 **최종 webpack.config.js 코드**
 
